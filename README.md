@@ -13,6 +13,8 @@ The dataset used for training and testing the classifier is sourced from Kaggle 
 
 The modified VGG16 model architecture has been designed to improve the performance of kidney stone classification. It includes 13 layers instead on the original 15 layers. The 13 layers comprises of 8 layers of comvolution and max pooling and 5 dense and flatten layers.
 
+![Architecture](arch.png)
+
 ## Installation
 
 1. Clone the repository:
