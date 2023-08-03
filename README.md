@@ -94,13 +94,21 @@ The evaluation script will load the trained model and display various metrics su
 After training and evaluating the model, you can use it to make predictions on new kidney stone images. Simply run the predict.py script and provide the path to the new image:
 
 ```bash
-python predict.py --image_path /path/to/your/image.jpg
+test_labels = test_set.classes
+y_pred1 = model2.predict(test_set)
+y_pred_classes1 = np.argmax(y_pred1, axis=1)
 ```
 
 The script will load the trained model, preprocess the image, and output the predicted class label.
 
 ## Results
 The modified VGG16 model has demonstrated superior performance compared to the original VGG16, AlexNet, MobileNet, and EfficientNet CNN models. It achieves higher accuracy and better generalization, making it an ideal choice for kidney stone classification tasks.
+
+
+![Results](modified.png)
+
+For comparison
+![Comparison](compare.png)
 
 ## Contributing
 Contributions to this project are welcome. If you find any bugs, have suggestions for improvements, or want to add new features, please open an issue or submit a pull request.
